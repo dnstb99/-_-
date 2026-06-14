@@ -1,0 +1,6 @@
+{
+  "name": "디자이너 성은수 포트폴리오",
+  "description": "Frame the Future - 브랜드의 가치를 시각적으로 설계하는 디자이너 성은수의 미니멀 포트폴리오 사이트",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,235 @@
+@import "tailwindcss";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
+
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GmarketSansBold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GmarketSansMedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GmarketSansLight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Custom Typography Utility Classes based on user spec */
+.ko-title {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 20px; /* 20pt is approx 20px - 26px, let's use exact 20px or fluid */
+}
+
+.ko-subtitle {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 14px; /* 14pt */
+}
+
+.en-title {
+  font-family: "GmarketSansBold", sans-serif;
+  font-weight: 700; /* Bold */
+  font-size: 20px; /* 20pt */
+}
+
+.en-subtitle {
+  font-family: "GmarketSansMedium", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 14px; /* 14pt */
+}
+
+.ko-desc {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 12px; /* 12pt */
+}
+
+.ko-subdesc {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 300; /* Light */
+  font-size: 12px; /* 12pt */
+}
+
+.en-desc {
+  font-family: "GmarketSansMedium", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 12px; /* 12pt */
+}
+
+.en-subdesc {
+  font-family: "GmarketSansMedium", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 12px; /* 12pt */
+}
+
+/* Hero Title Specifics */
+.hero-main-title {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 800; /* ExtraBold */
+  font-size: 40px; /* 40pt */
+}
+
+.hero-sub-title {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500; /* Medium */
+  font-size: 14px; /* 14pt */
+}
+
+/* Custom Scroll Behaviors and scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Stunning Ambient Glow Backgrounds */
+.gradient-point-bg {
+  background: radial-gradient(circle at 50% 50%, rgba(30, 79, 255, 0.15) 0%, rgba(122, 92, 255, 0.08) 50%, transparent 100%);
+}
+
+.gradient-text-gradient {
+  background: linear-gradient(135deg, #1E4FFF 0%, #4D63FF 40%, #7A5CFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-border-glow {
+  box-shadow: 0 0 15px rgba(77, 99, 255, 0.2);
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+* {
+  letter-spacing: 1.5pt !important;
+}
+
+.about-desc-custom {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 12pt !important;
+  letter-spacing: 1pt !important;
+}
+
+.about-title-custom {
+  line-height: 1.4 !important;
+  letter-spacing: 1pt !important;
+}
+
+.about-card-title {
+  font-family: "Pretendard", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 15pt !important;
+  color: #000000 !important;
+  letter-spacing: 0.8pt !important;
+}
+
+.about-card-desc {
+  font-family: "Pretendard", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 12pt !important;
+  color: #000000 !important;
+  letter-spacing: 0.8pt !important;
+  line-height: 1.6 !important;
+}
+
+.about-stat-count {
+  font-family: "GmarketSansBold", sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 20pt !important;
+  color: #000000 !important;
+}
+
+.about-stat-label {
+  font-family: "Pretendard", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 10pt !important;
+  letter-spacing: 0.8pt !important;
+  color: #000000 !important;
+}
+
+.works-category-btn {
+  font-family: "GmarketSansLight", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 12pt !important;
+  letter-spacing: 0.8pt !important;
+}
+
+.works-category-menu-custom {
+  font-family: "GmarketSansLight", sans-serif !important;
+  font-weight: 300 !important;
+  font-size: 12pt !important;
+  letter-spacing: 0.8pt !important;
+}
+
+.works-item-title {
+  font-family: "Pretendard", sans-serif !important;
+  font-weight: 700 !important; /* Bold */
+  font-size: 12pt !important;
+}
+
+.works-item-desc {
+  font-family: "Pretendard", sans-serif !important;
+  font-weight: 300 !important; /* Light */
+  font-size: 12pt !important;
+}
+
+.services-plan-title {
+  font-family: "GmarketSansBold", sans-serif !important;
+  font-weight: 700 !important; /* Bold */
+  font-size: 15pt !important;
+}
+
+.services-plan-desc {
+  font-family: "Pretendard", sans-serif !important;
+  font-weight: 300 !important; /* Light */
+  font-size: 12pt !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+  padding-bottom: 16px;
+  margin-bottom: 4px;
+}
+
+/* Infinite Background Marquee Animations */
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-scroll-up {
+  animation: scrollUp 35s linear infinite;
+}
+
+.animate-scroll-down {
+  animation: scrollDown 35s linear infinite;
+}
+
+
+
